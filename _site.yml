@@ -1,0 +1,62 @@
+name: "Sequencing Data Processing Workshop"
+
+navbar:
+  title: "Bionesia2021"
+  icon: fa-home
+  type: inverse
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "Intro to R"
+      icon: fa-cog
+      menu:
+          - text : "Plot in R"
+            href: setup.html
+          - text : "Ggtree"
+            href: r-ggtree_edit.html
+          - text : "Ggtree1"
+            href: r-ggtree.html
+    - text: "Data"
+      icon: fa-download
+      href: "data.html"
+    - text: "CSS Course"
+      icon: fa-book
+      menu:
+        - text: "Basic Molecular"
+          href: Basic_Molecular.html
+        - text: "Editing Sequence"
+          href: Editing_Sequence.html
+        - text: "DNA Barcoding"
+          href: DNA_Barcoding.html
+        - text: "Population Genetic"
+          href: Genetika_Populasi.html
+        - text: "Amova Analysis"
+          href: Analisis_Amova.html
+
+
+  right:
+    - icon: fa-question fa-lg
+      menu:
+        - text: "FAQ"
+          href: index.html#faq
+        - text: "Further resources"
+          href: help.html
+        - text: "Source code for this site"
+          href: https://github.com/metabarcodingcourse/2020Course
+output:
+  html_document:
+    theme: default
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+    fig_align: center
+    css:
+      - https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css
+      - styles.css
+    includes:
+      in_header: _include/in_header.html
+      after_body: _include/after_body.html
+
+exclude: ["LICENSE", "README.markdown", "CONTRIBUTING.markdown", "*.Rproj", "*.key", "*.psd"]
